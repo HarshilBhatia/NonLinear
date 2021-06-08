@@ -92,5 +92,8 @@ y = np.sin(u) * np.sin(v)
 z = np.cos(v)
 ax.plot_wireframe(x, y, z, color="#d3d3d3")
 
+ax.set_xlabel('u')
+ax.set_ylabel('v')
+ax.set_zlabel('w')
 plt.show()
 
