@@ -1,9 +1,10 @@
+from NonLinear.plot import Stereographic
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 
 from NonLinear.chaos import inverse
-
+from NonLinear.plot import StereographicProjection
 import warnings
 
 
@@ -63,23 +64,7 @@ def plot(Uo, Vo, Wo):
 for row in range(len(xx)):
     Z_row = []
     for col in range(len(xx[row])):
-        u = (
-            2
-            * ((2 * P - 1) ** 0.5)
-            * xx[row][col]
-            / (xx[row][col] ** 2 + yy[row][col] ** 2 + 1)
-        )
-        v = (
-            2
-            * ((2 * P - 1) ** 0.5)
-            * yy[row][col]
-            / (xx[row][col] ** 2 + yy[row][col] ** 2 + 1)
-        )
-        w = (
-            2 * ((2 * P - 1) ** 0.5) / (xx[row][col] ** 2 + yy[row][col] ** 2 + 1)
-            - (2 * P - 1) ** 0.5
-        )
-
+        u,v,w = Stereographic(xx[row][col],yy[row][col],P)
         if u != 0:
             plot(u, v, w)
 

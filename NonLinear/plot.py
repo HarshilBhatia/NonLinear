@@ -1,7 +1,12 @@
+def StereographicProjection(xx, yy, P):
+    u = 2 * ((2 * P - 1) ** 0.5) * xx / (xx ** 2 + yy ** 2 + 1)
+    v = 2 * ((2 * P - 1) ** 0.5) * yy / (xx ** 2 + yy ** 2 + 1)
+    w = 2 * ((2 * P - 1) ** 0.5) / (xx ** 2 + yy ** 2 + 1) - (2 * P - 1) ** 0.5
+    return u,v,w
 
 def Proj(inv, xx, yy, P, eta):
     """
-    Calculates contour values for stereographic projection 
+    Calculates contour values for stereographic projection
 
     Parameters:
     inv (function) : Function responsible for returning value of a point
