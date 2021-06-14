@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import matplotlib as mpl
 
-from helper.Inverse import inverse
+from NonLinear.Inverse import inverse
 
 import warnings
 
@@ -32,7 +32,6 @@ xx, yy = np.meshgrid(np.linspace(0.01, 2, 3), np.linspace(0.01, 2, 3))
 
 
 def plot(Uo, Vo, Wo):
-    # l1 = []
     ul, vl, wl = [], [], []
 
     for itr in range(n):
