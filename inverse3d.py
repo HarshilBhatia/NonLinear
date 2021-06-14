@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import matplotlib as mpl
 
-from NonLinear.Inverse import inverse
+from NonLinear.chaos import inverse
 
 import warnings
 

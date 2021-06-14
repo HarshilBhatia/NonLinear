@@ -1,3 +1,8 @@
+""" 
+File containging Functionality of the State Matching Protocol
+
+"""
+
 def W_forward(u, v, w, e, eta):
 
     """
