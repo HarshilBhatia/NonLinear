@@ -1,4 +1,14 @@
-from NonLinear.plot import Stereographic
+"""
+The following code is responsible for generating a 3d plot with the evolution under the -ve inverse Map. 
+A gray line indicates the next order of points .
+The points have been color graded by the number of iterations it took to obtain them. 
+The color grading is from light blue to black. 
+The grading is based on the fraction of iterations ( from the total number) 
+hence, n i.e. the number of iterations is best kept low for a better visualization. 
+The red points denote the final evolution, which is out of the bloch sphere. 
+
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib as mpl
