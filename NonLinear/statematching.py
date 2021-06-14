@@ -1,5 +1,5 @@
 """ 
-File containging Functionality of the State Matching Protocol
+File contains evolution of (u,v,w) for the State Matching Protocol
 
 """
 
@@ -112,4 +112,3 @@ def V_forward(u, v, w, e, eta):
     t2 = t2_n / t2_d
 
     return t1 + t2
-
