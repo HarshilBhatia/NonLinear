@@ -74,7 +74,7 @@ def plot(Uo, Vo, Wo):
 for row in range(len(xx)):
     Z_row = []
     for col in range(len(xx[row])):
-        u,v,w = Stereographic(xx[row][col],yy[row][col],P)
+        u,v,w = StereographicProjection(xx[row][col],yy[row][col],P)
         if u != 0:
             plot(u, v, w)
 
