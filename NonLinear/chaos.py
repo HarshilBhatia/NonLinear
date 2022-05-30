@@ -81,6 +81,8 @@ def forward(u, v, w, eta, itr=1, print_itr=False):
     return u, v, w
 
 
+
+
 def w_inv(Uo, Vo, Wo, eta):
     """
     Function that calculates the inverse of W
@@ -93,9 +95,7 @@ def w_inv(Uo, Vo, Wo, eta):
 
     Returns:
     Double : value of w
-
     """
-
     return (eta - ((eta ** 2 - Uo ** 2) ** (0.5))) / (Uo)
 
 
